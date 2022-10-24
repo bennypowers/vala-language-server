@@ -132,6 +132,8 @@ class Vls.GirDocumentation {
         add_types ();
 
         // parse once
+        //  context.root.scope.lookup ("bool")
+
         var gir_parser = new Vala.GirParser ();
         gir_parser.parse (context);
 
