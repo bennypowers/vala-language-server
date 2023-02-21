@@ -21,7 +21,7 @@
         let pkgs = nixpkgsFor.${system};
         in {
           default = pkgs.mkShell {
-            buildInputs = with pkgs; [ meson ninja vala jsonrpc-glib libgee ];
+            buildInputs = with pkgs; [ pkg-config meson ninja vala jsonrpc-glib json-glib libgee glib ];
           };
         });
 
